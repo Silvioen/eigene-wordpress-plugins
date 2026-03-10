@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Mobile Browser Bar Color
- * Description: Passt die Farbe der mobilen Browser-Bar durch Hinzufügen von Meta-Tags an.
+ * Description: Passt die Farbe der mobilen Browser-Bar durch Hinzufügen von Meta-Tags an. Customizer-Einstellungen unter Design > Customizer.
  * Version: 1.0
  * Author: Silvio Endruhn
  * License: GPL2
