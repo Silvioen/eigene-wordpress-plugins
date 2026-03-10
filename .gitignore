@@ -1,0 +1,92 @@
+# ==============================================================================
+# .gitignore - Studimed WordPress Projekte (Child Theme + Plugins)
+# ==============================================================================
+
+# ============ WORDPRESS ============
+# Konfiguration mit sensiblen Daten
+wp-config.php
+wp-config-local.php
+local-config.php
+
+# Benutzer-Uploads (groß, umgebungsspezifisch)
+/wp-content/uploads/
+uploads/
+
+# WordPress Cache & Temp
+/wp-content/cache/
+/wp-content/backup-*
+/wp-content/upgrade/
+/wp-content/updraft-backups/
+.maintenance
+
+# DB Backups & SQL Dumps
+*.sql
+*.sql.gz
+wp-backup/
+backups/
+
+# ============ DEPENDENCIES ============
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# PHP Composer
+composer.lock
+vendor/
+
+# Package locks (keep one per Projekt)
+pnpm-lock.yaml
+
+# ============ BUILD & CACHE ============
+dist/
+build/
+.vite/
+*.local
+*.tsbuildinfo
+
+# ============ LOGS & TEMP ============
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+
+# ============ ENVIRONMENT ============
+.env
+.env.local
+.env.*.local
+
+# ============ IDE & EDITOR ============
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.editorconfig
+.project
+.settings/
+
+# ============ OS-spezifisch ============
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# ============ ARCHIVE & BACKUP ============
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+*.gz
+
+# ==============================================================================
+# EXCEPTIONS (bei Bedarf kommentieren)
+# ==============================================================================
+# !.env.example
+# !vendor/  (wenn selbst entwickelte Package commitet werden sollen)
